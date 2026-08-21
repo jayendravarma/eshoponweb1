@@ -13,7 +13,8 @@ stages:
   jobs:
   - job: Build
     pool:
-      vmImage: agent1
+      vmImage: 'windows-latest'
+      name: 'agent'
     steps:
     - task: DotNetCoreCLI@2
       displayName: Restore
