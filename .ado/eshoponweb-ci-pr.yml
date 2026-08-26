@@ -10,7 +10,8 @@ stages:
   jobs:
   - job: Build
     pool:
-      vmImage: ubuntu-latest
+      vmImage: 'windows-latest'
+      name: 'agent'
     steps:
     - task: DotNetCoreCLI@2
       displayName: Restore
